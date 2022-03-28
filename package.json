@@ -1,5 +1,5 @@
 {
-  "name": "@zhuweiyou/vite-plugin-minify",
+  "name": "vite-plugin-minify",
   "version": "0.1.0",
   "description": "minify html in production",
   "main": "index.js",
