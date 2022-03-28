@@ -1,4 +1,4 @@
-# vite-plugin-minify
+# @zhuweiyou/vite-plugin-minify
 
 minify html in production
 
