@@ -5,8 +5,8 @@
   "main": "index.js",
   "types": "index.d.ts",
   "scripts": {
-    "build": "npx tsc -d",
-    "watch": "npx tsc --watch"
+    "build": "tsc -d",
+    "watch": "tsc --watch"
   },
   "author": "zhuweiyou <i@zhuweiyou.com>",
   "license": "MIT",
