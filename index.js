@@ -1,6 +1,6 @@
 const { minify } = require('html-minifier-terser')
 
-function minifyPlugin(options = {}) {
+function ViteMinifyPlugin(options = {}) {
   return {
     name: 'vite-plugin-minify',
     enforce: 'post',
@@ -23,4 +23,4 @@ function minifyPlugin(options = {}) {
   }
 }
 
-module.exports = minifyPlugin
+module.exports = { ViteMinifyPlugin }
