@@ -1,12 +1,12 @@
 {
   "name": "vite-plugin-minify",
-  "version": "0.2.0",
+  "version": "1.0.0",
   "description": "minify html in production",
   "main": "index.js",
   "types": "index.d.ts",
   "scripts": {
     "build": "tsc -d",
-    "watch": "tsc --watch"
+    "watch": "tsc -w"
   },
   "author": "zhuweiyou <i@zhuweiyou.com>",
   "license": "MIT",
@@ -23,7 +23,7 @@
     "url": "git+https://github.com/zhuweiyou/vite-plugin-minify.git"
   },
   "dependencies": {
-    "html-minifier-terser": "^7.0.0-alpha.2"
+    "html-minifier-terser": "^6.1.0"
   },
   "devDependencies": {
     "@types/html-minifier-terser": "^6.1.0",

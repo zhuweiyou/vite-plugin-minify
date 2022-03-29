@@ -1,7 +1,7 @@
 import { Plugin, ResolvedConfig } from 'vite'
 import { minify, Options } from 'html-minifier-terser'
 
-type ViteMinifyPluginOptions = Options
+export type ViteMinifyPluginOptions = Options
 
 export function ViteMinifyPlugin(options?: ViteMinifyPluginOptions): Plugin {
   let config: ResolvedConfig
