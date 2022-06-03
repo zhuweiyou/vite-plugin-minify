@@ -1,6 +1,5 @@
 import { Plugin, ResolvedConfig } from 'vite'
 import { minify, Options } from 'html-minifier-terser'
-import { join } from 'path'
 import { glob } from 'glob'
 import { readFile, writeFile } from 'fs/promises'
 
@@ -17,7 +16,7 @@ export function ViteMinifyPlugin(options?: Options): Plugin {
       config = resolvedConfig
     },
     closeBundle: () => {
-      glob(join(config.build.outDir, '**', '*.html'), (err, files) => {
+      glob(`${config.build.outDir}/**/*.html`, (err, files) => {
         if (err) {
           return console.error(`[${PLUGIN_NAME}]`, err)
         }
