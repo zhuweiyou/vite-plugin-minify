@@ -3,4 +3,4 @@ import { Options } from 'html-minifier-terser';
 
 declare function ViteMinifyPlugin(options?: Options): Plugin;
 
-export { ViteMinifyPlugin };
+export { ViteMinifyPlugin, ViteMinifyPlugin as default };
