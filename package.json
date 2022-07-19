@@ -1,6 +1,6 @@
 {
   "name": "vite-plugin-minify",
-  "version": "1.4.2",
+  "version": "1.4.3",
   "description": "Minify html in production",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
