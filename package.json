@@ -1,6 +1,6 @@
 {
   "name": "vite-plugin-minify",
-  "version": "1.4.3",
+  "version": "1.5.0",
   "description": "Minify html in production",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -23,7 +23,6 @@
     "url": "git+https://github.com/zhuweiyou/vite-plugin-minify.git"
   },
   "dependencies": {
-    "glob": "^8.0.3",
     "html-minifier-terser": "^6.1.0"
   },
   "devDependencies": {
