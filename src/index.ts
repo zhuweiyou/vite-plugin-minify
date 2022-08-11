@@ -1,22 +1,12 @@
-import { Plugin, ResolvedConfig } from 'vite'
+import { Plugin } from 'vite'
 import { minify, Options } from 'html-minifier-terser'
 
-const PLUGIN_NAME = 'vite-plugin-minify'
-
 export function ViteMinifyPlugin(options?: Options): Plugin {
-  let config: ResolvedConfig
-
   return {
-    name: PLUGIN_NAME,
+    name: 'vite-plugin-minify',
     enforce: 'post',
     apply: 'build',
-    configResolved: (resolvedConfig) => {
-      config = resolvedConfig
-    },
     transformIndexHtml: (html) => {
-      if (config.mode !== 'production') {
-        return html
-      }
       return minify(html, {
         removeComments: true,
         collapseWhitespace: true,
