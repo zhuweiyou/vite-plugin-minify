@@ -2,7 +2,7 @@ import { Plugin, ResolvedConfig } from 'vite'
 import { minify, Options } from 'html-minifier-terser'
 import { glob } from 'glob'
 import { readFile, writeFile } from 'fs/promises'
-import { normalize } from 'path'
+import { normalize, basename } from 'path'
 
 const PLUGIN_NAME = 'vite-plugin-minify'
 
@@ -17,7 +17,7 @@ export function ViteMinifyPlugin(options?: Options): Plugin {
       config = resolvedConfig
     },
     closeBundle: () => {
-      glob(normalize(`${config.build.outDir}/**/*.html`).replace(/\\/g, '/'), (err, files) => {
+      glob(normalize(`${basename(config.build.outDir)}/**/*.html`).replace(/\\/g, '/'), (err, files) => {
         if (err) {
           return console.error(`[${PLUGIN_NAME}]`, err)
         }
