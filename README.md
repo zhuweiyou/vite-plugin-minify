@@ -20,3 +20,7 @@ export default defineConfig({
   ],
 })
 ```
+
+## Other Plugins
+
+- [vite-plugin-mp](https://github.com/zhuweiyou/vite-plugin-mp) - Configure multi-pages applications and code splitting
