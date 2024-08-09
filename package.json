@@ -1,12 +1,14 @@
 {
   "name": "vite-plugin-minify",
-  "version": "1.5.2",
+  "version": "2.0.0",
   "description": "Minify html in production",
-  "main": "dist/index.js",
-  "module": "dist/index.mjs",
+  "type": "module",
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "tsup"
+    "format": "prettier --write .",
+    "build": "npm run format && tsup"
   },
   "author": "zhuweiyou <i@zhuweiyou.com>",
   "license": "MIT",
@@ -23,15 +25,17 @@
     "url": "git+https://github.com/zhuweiyou/vite-plugin-minify.git"
   },
   "dependencies": {
-    "html-minifier-terser": "^6.1.0"
+    "@types/html-minifier-terser": "^7.0.2",
+    "html-minifier-terser": "^7.2.0"
   },
   "devDependencies": {
-    "@types/html-minifier-terser": "^6.1.0",
-    "@types/node": "^17.0.36",
-    "tsup": "^6.0.1",
-    "vite": "*"
+    "@types/node": "^22.1.0",
+    "prettier": "^3.3.3",
+    "tsup": "^8.2.4",
+    "typescript": "^5.5.4",
+    "vite": "^5.4.0"
   },
   "peerDependencies": {
-    "vite": "*"
+    "vite": "^5.4.0"
   }
 }
