@@ -1,6 +1,6 @@
 {
   "name": "vite-plugin-minify",
-  "version": "2.0.1",
+  "version": "2.1.0",
   "description": "Minify html in production",
   "type": "module",
   "main": "dist/index.cjs",
@@ -33,9 +33,9 @@
     "prettier": "^3.3.3",
     "tsup": "^8.2.4",
     "typescript": "^5.5.4",
-    "vite": "^5.4.0"
+    "vite": ">=5"
   },
   "peerDependencies": {
-    "vite": "^5.4.0"
+    "vite": ">=5"
   }
 }
