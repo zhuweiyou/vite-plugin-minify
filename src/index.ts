@@ -1,8 +1,8 @@
 import { Plugin } from 'vite'
-import { minify, Options } from 'html-minifier-terser'
+import { minify, MinifierOptions } from 'html-minifier-next'
 
 /**
- * @param options [html-minifier-terser options](https://github.com/terser/html-minifier-terser?tab=readme-ov-file#options-quick-reference)
+ * @param options [html-minifier-next options](https://github.com/j9t/html-minifier-next?tab=readme-ov-file#options-quick-reference)
  *
  * @default
  *
@@ -20,7 +20,7 @@ import { minify, Options } from 'html-minifier-terser'
  *
  * @returns vite-plugin-minify
  */
-export function ViteMinifyPlugin(options?: Options): Plugin {
+export function ViteMinifyPlugin(options?: MinifierOptions): Plugin {
   return {
     name: 'vite-plugin-minify',
     apply: 'build',
